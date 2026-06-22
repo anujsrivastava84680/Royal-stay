@@ -1,0 +1,651 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: sans-serif;
+}
+
+.navbar {
+    position: fixed;
+    z-index: 10;
+    height: 70px;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.royal-stay {
+    height: 80%;
+    width: 20%;
+    font-weight: bold;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-stay {
+    height: 80%;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-stay>ul {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+}
+
+.menu-stay>ul>li {
+    list-style: none;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.menu-stay>ul>li:hover {
+    cursor: pointer;
+    color: rgb(174, 236, 172);
+}
+
+.btn-stay {
+    height: 80%;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-stay>.btn {
+    height: 80%;
+    width: 60%;
+    background-color: red;
+    border: none;
+    border-radius: 20px;
+    font-size: 15px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.2s ease;
+}
+
+.btn-stay>.btn:hover {
+    background-color: rgba(255, 0, 0, 0.648);
+    transform: translateY(-3px);
+}
+
+.image {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(Image/image1.png);
+}
+
+.text {
+    height: 250px;
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    background-color: rgba(59, 46, 46, 0.507);
+}
+
+.text>h1 {
+    font-size: 60px;
+}
+
+.text>p {
+    color: white;
+}
+
+.text>button {
+    height: 50px;
+    width: 150px;
+    background-color: red;
+    font-size: 17px;
+    border-radius: 20px;
+    font-weight: bold;
+    border: none;
+    transition: 0.2s ease;
+}
+
+.text>button:hover {
+    transform: translateY(-5px);
+    background-color: rgba(255, 0, 0, 0.648);
+}
+
+.Our-Rooms {
+    height: 500px;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    opacity: 0;
+    transform: translateY(100px);
+    animation: fadeUp 1s ease forwards;
+    animation-delay: 2s;
+}
+
+@keyframes fadeUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.inner-image {
+    height: 400px;
+    width: 300px;
+    background-color: rgb(240, 232, 230);
+    border-radius: 20px;
+    text-align: center;
+    transition: 0.4s ease;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+.inner-image:hover {
+    transform: translateY(-20px);
+    cursor: pointer;
+}
+
+.inner-image>img {
+    height: 250px;
+    width: 100%;
+    border-radius: 20px;
+}
+
+.inner-image>button {
+    color: rgb(230, 222, 222);
+    background-color: rgb(61, 56, 56);
+    height: 40px;
+    width: 40%;
+    font-weight: bolder;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.inner-image>h2,
+p {
+    color: black;
+}
+
+.Our-Rooms-h2 {
+    text-align: center;
+    font-size: 35px;
+    font-weight: bolder;
+    color: black;
+}
+
+.Our-Services {
+    height: 500px;
+    width: 100%;
+    text-align: center;
+    background-color: black;
+}
+
+.Our-Services>h2 {
+    text-align: center;
+    font-size: 35px;
+    font-weight: bolder;
+    font-family: sans-serif;
+}
+
+.Our-Services-inner {
+    height: 250px;
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transform: translateY(100px);
+    animation: anuj 4s ease forwards;
+}
+
+@keyframes anuj {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.inner {
+    opacity: 0;
+    transform: translateY(100px);
+    animation: anuj 6s ease forwards;
+    height: 100px;
+    border-radius: 20px;
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(120, 107, 107, 0.384);
+    font-size: 17px;
+    font-weight: bold;
+    transition: 0.4s ease;
+}
+
+.inner:hover {
+    background-color: red;
+    transform: translateY(-10px);
+}
+
+.What-Our-Guests-Say {
+    text-align: center;
+    font-size: 35px;
+    font-weight: bolder;
+    color: black;
+}
+
+.Guests-Say-inner-image {
+    height: 400px;
+    width: 300px;
+    background-color: rgb(240, 232, 230);
+    border-radius: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s ease;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+    transition: 0.4s ease;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+.Guests-Say-inner-image:hover {
+    transform: translateY(-20px) !important;
+    cursor: pointer;
+}
+
+.Guests-Say-inner-image>img {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    border: 4px double red;
+}
+
+.Guests-Say-inner-image>button {
+    height: 40px;
+    width: 40%;
+    font-weight: bolder;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.Guests-Say-inner-image>button>i {
+    color: rgb(30, 32, 32);
+    font-size: 20px;
+}
+
+.Guests-Say-inner-image>h2,
+p {
+    color: black;
+}
+
+.Guests-Say-inner-image-h2 {
+    text-align: center;
+    font-size: 35px;
+    font-weight: bolder;
+    color: black;
+}
+
+.Special-Offers {
+    color: black;
+    font-weight: bolder;
+    text-align: center;
+    font-size: 35px;
+}
+
+.offers {
+    height: 200px;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.inner-text {
+    height: 200px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(240, 232, 230);
+    border-radius: 20px;
+    text-align: center;
+    transition: 0.4s ease;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+.inner-text:hover {
+    transform: translateY(-20px);
+    cursor: pointer;
+}
+
+.inner-text>button {
+    color: white;
+    background-color: red;
+    height: 40px;
+    width: 40%;
+    font-weight: bolder;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.inner-text>h2,
+p {
+    color: black;
+}
+
+.Special-Offers-h2 {
+    text-align: center;
+    font-size: 35px;
+    font-weight: bolder;
+    color: black;
+}
+
+.Our-Achievements {
+    height: 250px;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.Achievements {
+    text-align: center;
+    font-size: 40px;
+    font-weight: bolder;
+    color: black;
+}
+
+.Our-Achievements-inner {
+    height: 150px;
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transform: translateY(100px);
+    animation: our 12s ease forwards;
+}
+
+@keyframes our {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.Our-Achievements-inner>span {
+    font-size: 70px;
+    color: red;
+    font-weight: bolder;
+}
+
+.Our-Achievements-inner>p {
+    font-size: 18px;
+    font-weight: bolder;
+    font-family: sans-serif;
+    color: white;
+}
+
+.Contact-Us {
+    height: 300px;
+    width: 100%;
+    background-color: rgb(212, 206, 206);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.contact {
+    color: black;
+}
+
+.contact-p {
+    color: black;
+}
+
+.Royal-Stay-Hotel {
+    height: 70px;
+    text-align: center;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+
+@media(min-width:0px) and (max-width:767px) {
+
+    .navbar {
+        height: auto;
+        flex-direction: column;
+        padding: 15px 0;
+        gap: 15px;
+        position: static;
+    }
+
+    .royal-stay,
+    .menu-stay,
+    .btn-stay {
+        width: 100%;
+    }
+
+    .menu-stay ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .btn-stay .btn {
+        width: 150px;
+        height: 45px;
+    }
+
+    .text {
+        width: 95%;
+        height: auto;
+        padding: 20px;
+    }
+
+    .text h1 {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .text p {
+        text-align: center;
+    }
+
+    .Our-Rooms {
+        height: auto;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .image {
+
+
+        height: auto;
+        min-height: 500px;
+
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-size: 100% 100%;
+        background-position: center;
+
+    }
+
+    .inner-image,
+    .Guests-Say-inner-image,
+    .inner-text {
+        width: 95%;
+    }
+
+
+    .Guests-Say-inner-image>button>i {
+        color: rgb(30, 32, 32);
+        font-size: 17px;
+    }
+
+    .Our-Services {
+        height: auto;
+        /* padding-bottom: 30px; */
+    }
+
+    .Our-Services-inner {
+        height: auto;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .inner {
+        width: 90%;
+        margin: auto;
+    }
+
+    .offers {
+        height: auto;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .Our-Achievements {
+        height: auto;
+        flex-direction: column;
+        gap: 20px;
+        padding: 30px 0;
+    }
+
+    .Our-Achievements-inner span {
+        font-size: 50px;
+    }
+
+    .Royal-Stay-Hotel {
+        font-size: 15px;
+        padding: 15px;
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    html,
+    body {
+        overflow-x: hidden;
+    }
+
+}
+
+@media (min-width:768px) and (max-width:1024px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    html,
+    body {
+        overflow-x: hidden;
+    }
+
+    .navbar {
+        padding: 0 20px;
+    }
+
+    .menu-stay {
+        width: 50%;
+    }
+
+    .btn-stay {
+        width: 25%;
+    }
+
+    .image {
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-size: 100% 100%;
+        background-position: center;
+
+    }
+
+    .text {
+        width: 90%;
+    }
+
+    .text h1 {
+        font-size: 50px;
+    }
+
+    .Our-Rooms {
+        height: auto;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    .inner-image,
+    .Guests-Say-inner-image {
+        width: 45%;
+    }
+
+    .Our-Services {
+        height: auto;
+        padding-bottom: 40px;
+    }
+
+    .Our-Services-inner {
+        height: auto;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .inner {
+        width: 90%;
+    }
+
+    .offers {
+        height: auto;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    .inner-text {
+        width: 45%;
+    }
+
+    .Our-Achievements {
+        flex-wrap: wrap;
+        height: auto;
+        padding: 30px;
+    }
+
+}
